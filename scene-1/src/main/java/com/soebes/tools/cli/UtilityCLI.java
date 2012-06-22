@@ -5,8 +5,6 @@ import java.util.Date;
 
 import org.apache.log4j.Logger;
 
-import com.soebes.tools.DateDifferenceExample.Dates;
-
 public class UtilityCLI {
     private static Logger LOGGER = Logger.getLogger(UtilityCLI.class);
 
@@ -46,15 +44,15 @@ public class UtilityCLI {
 
         long diff = milis2 - milis1;
 
-        System.out.print("Delta: ");
-        for (Dates item : Dates.values()) {
-            long result = diff / item.getDivider();
-            if (result == 0) {
-                continue;
-            }
-            System.out.print(result + " " + item.name() + " ");
-            diff -= result * item.getDivider();
-        }
+//        System.out.print("Delta: ");
+//        for (Dates item : Dates.values()) {
+//            long result = diff / item.getDivider();
+//            if (result == 0) {
+//                continue;
+//            }
+//            System.out.print(result + " " + item.name() + " ");
+//            diff -= result * item.getDivider();
+//        }
         System.out.println("");
 
     }
