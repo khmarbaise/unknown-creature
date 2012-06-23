@@ -10,7 +10,7 @@
   <version>0.1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>Genius App :: core</name>
+  <name>Genius App :: Utility</name>
   <url>http://www.soebes.de</url>
   <inceptionYear>2012</inceptionYear>
   <organization>

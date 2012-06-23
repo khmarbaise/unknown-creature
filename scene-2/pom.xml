@@ -10,7 +10,7 @@
   <version>0.1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>Genius App :: core</name>
+  <name>Genius App :: Utility</name>
   <url>http://www.soebes.de</url>
   <inceptionYear>2012</inceptionYear>
   <organization>
@@ -24,9 +24,9 @@
   </properties>
 
   <scm>
-    <connection>scm:git:http://utility</connection>
-    <developerConnection>scm:git:http://ut</developerConnection>
-    <url>xxxx</url>
+    <connection>scm:git:file:///home/kama/repos-git/utility.git</connection>
+    <developerConnection>scm:git:file:///home/kama/repos-git/utility.git</developerConnection>
+    <url>http://www.utility.org/repository/</url>
   </scm>
 
   <build>
@@ -80,7 +80,6 @@
           <descriptors>
             <descriptor>src/main/assembly/bin.xml</descriptor>
             <descriptor>src/main/assembly/bin-unix.xml</descriptor>
-            <descriptor>src/main/assembly/src.xml</descriptor>
           </descriptors>
           <tarLongFileMode>gnu</tarLongFileMode>
         </configuration>
@@ -111,13 +110,9 @@
       <groupId>org.easytesting</groupId>
       <artifactId>fest-assert</artifactId>
       <version>1.4</version>
+      <scope>test</scope>
     </dependency>
 
-    <dependency>
-      <groupId>commons-lang</groupId>
-      <artifactId>commons-lang</artifactId>
-      <version>2.1</version>
-    </dependency>
     <dependency>
       <groupId>com.beust</groupId>
       <artifactId>jcommander</artifactId>
