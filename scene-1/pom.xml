@@ -24,9 +24,9 @@
   </properties>
 
   <scm>
-    <connection>scm:git:http://utility</connection>
-    <developerConnection>scm:git:http://ut</developerConnection>
-    <url>xxxx</url>
+    <connection>scm:git:file:///home/kama/repos-git/utility.git</connection>
+    <developerConnection>scm:git:file:///home/kama/repos-git/utility.git</developerConnection>
+    <url>http://www.utility.org/repository/</url>
   </scm>
 
   <build>
