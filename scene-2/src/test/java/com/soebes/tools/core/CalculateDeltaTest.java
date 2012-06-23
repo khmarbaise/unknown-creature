@@ -1,10 +1,10 @@
-package com.soebes.tools;
+package com.soebes.tools.core;
 
 import static org.fest.assertions.Assertions.assertThat;
 
-import org.testng.annotations.Test;
+import java.util.Date;
 
-import com.soebes.tools.core.CalculateDelta;
+import org.testng.annotations.Test;
 
 public class CalculateDeltaTest {
 
@@ -24,5 +24,14 @@ public class CalculateDeltaTest {
 	String endDate = "23.03.2010 14:00:00";
 	long delta = calculate.deltaInSeconds(startDate, endDate);
 	assertThat(delta).isEqualTo(3000);
+    }
+
+    @Test
+    public void deltaInMilliSecondsWithDatesTest() {
+	CalculateDelta calculate = new CalculateDelta();
+	Date startDate = CalculateDelta.parseDate("23.03.2010 13:10:00");
+	Date endDate = CalculateDelta.parseDate("23.03.2010 14:00:00");
+	long delta = calculate.deltaInMilliSeconds(startDate, endDate);
+	assertThat(delta).isEqualTo(3000000);
     }
 }
